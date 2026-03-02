@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- <base href="/"> -->
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="ME SYSTEM AVALIAÇÃO">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="SME SYSTEM">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
+
+  <title>SME SYSTEM AVALIAÇÃO</title>
+  <link rel="manifest" href="manifest.json">
+   <style>
+    .container {
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      /* Default Axis is X*/
+      justify-content: center;
+      /* Main Axis */
+      align-items: center;
+      /* Cross Axis */
+    }
+
+    .indicator {
+      width: 20vw;
+    }
+  </style>
+</head>
+<body style="overflow: hidden">
+
+  <canvas id="canvasDst" hidden="hidden"></canvas>
+  <canvas id="canvasTmp" hidden="hidden"></canvas>
+  <div id="loading_indicator" class="container">
+    <img class="indicator" src="assets/assets/smesystem_loading.gif" />
+  </div>
+
+  <script src="flutter_bootstrap.js" async></script>
+</body>
+</html>
