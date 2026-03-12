@@ -6,12 +6,12 @@
 
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="ME SYSTEM AVALIAÇÃO">
+  <meta name="description" content="AVALIAÇÃO - SME SYSTEM">
 
   <!-- iOS meta tags & icons -->
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="SME SYSTEM">
+  <meta name="apple-mobile-web-app-title" content="AVALIAÇÃO - SME SYSTEM">
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
@@ -20,22 +20,47 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png"/>
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png"/>
 
-  <title>SME SYSTEM AVALIAÇÃO</title>
+  <title>AVALIAÇÃO - SME SYSTEM</title>
   <link rel="manifest" href="manifest.json">
    <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #ffffff;
+    }
+
     .container {
-      width: 100vw;
-      height: 100vh;
+      width: 100%;
+      height: 100%;
       display: flex;
-      /* Default Axis is X*/
       justify-content: center;
-      /* Main Axis */
       align-items: center;
-      /* Cross Axis */
     }
 
     .indicator {
-      width: 20vw;
+      width: 40vw;
+      max-width: 200px;
+      min-width: 100px;
+      height: auto;
+    }
+
+    /* Telas muito pequenas (celular) */
+    @media (max-width: 600px) {
+      .indicator {
+        width: 60vw;
+        max-width: 180px;
+      }
+    }
+
+    /* Telas grandes */
+    @media (min-width: 1200px) {
+      .indicator {
+        width: 15vw;
+        max-width: 220px;
+      }
     }
   </style>
 </head>
